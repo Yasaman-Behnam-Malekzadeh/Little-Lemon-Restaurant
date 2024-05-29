@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navigation from "./Navigation";
 import { List } from "react-bootstrap-icons";
 import { X } from "react-bootstrap-icons";
-import MainLogo from "../../images/main logo.png"
+import MainLogo from "../../images/main logo.png";
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   function handleToggle() {
@@ -12,17 +12,13 @@ export default function Navbar() {
   return (
     <nav>
       <nav className="burger">
-        <img
-          src={MainLogo}
-          alt="Little Lemon logo"
-          className="nav-image"
-        ></img>
+        <img src={MainLogo} alt="Little Lemon logo" className="nav-image"></img>
 
         <button className="burger-icon" onClick={handleToggle}>
-          <img src={navbarOpen ? <X/> : <List/>} alt="Navigation Bar" />
+          {navbarOpen ? <X size={"30px"} /> : <List size={"30px"} />}
         </button>
       </nav>
-      <Navigation device="desktop" />
+      <Navigation device="desktop container" />
       {navbarOpen ? <Navigation device="mobile" /> : ""}
     </nav>
   );

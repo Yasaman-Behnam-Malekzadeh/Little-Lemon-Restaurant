@@ -1,4 +1,3 @@
-// import Carousel from "./SpecialsCarousel";
 import SpecialCard from "../cards/SpecialCard";
 import Bruchesta from "../../images/bruschetta.png";
 import GreekSalad from "../../images/greek salad.png";
@@ -57,8 +56,6 @@ export default function Specials() {
           />
         ))}
       </section>
-
-      <section className="specials-carousel">{/* <Carousel /> */}</section>
     </section>
   );
 }

@@ -25,14 +25,11 @@ export default function Navigation(props) {
       <a className="hover-effect" href={Menu} target="_blank" rel="noreferrer">
         <h3>Menu</h3>
       </a>
-      <Link className="hover-effect" to="/reservations">
+      <Link className="hover-effect" to="/reservation">
         <h3>Reservations</h3>
       </Link>
       <Link className="hover-effect" to="/order">
         <h3>Order</h3>
-      </Link>
-      <Link className="hover-effect" to="/login">
-        <h3>Login</h3>
       </Link>
     </menu>
   );

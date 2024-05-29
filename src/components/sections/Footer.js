@@ -4,7 +4,7 @@ import Menu from "../../images/menu.jpeg";
 export default function Footer() {
   return (
     <footer>
-      <menu>
+      <menu className="mt-0">
         <li className="img-footer">
           <img src={FooterLogo} alt="Little Lemon logo"></img>
         </li>

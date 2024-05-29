@@ -1,4 +1,3 @@
-// import Carousel from "./TestimonialCarousel";
 import TestimonialCard from "../cards/TestimonialCard";
 export default function Testimonials() {
   const testimonailItems = [
@@ -25,6 +24,29 @@ export default function Testimonials() {
       description:
         "The food here really refreshed me after a late night shift at the local supply depot.",
     },
+    {
+      id: 5,
+      name: "Micheal Caldwell",
+      description: "This is the best Mediterranean food that I've ever had!",
+    },
+    {
+      id: 6,
+      name: "Alan Chen",
+      description:
+        "My Shiba Inu, Mugi, really loved the cozy vibes and delicious food here.",
+    },
+    {
+      id: 7,
+      name: "Casey Lau",
+      description:
+        "I've had some great Mediterranean food before, but none of them beats Little Lemon in flavor and texture.",
+    },
+    {
+      id: 8,
+      name: "Jim Reynor",
+      description:
+        "The food here really refreshed me after a late night shift at the local supply depot.",
+    },
   ];
   return (
     <section className="testimonials">
@@ -41,10 +63,6 @@ export default function Testimonials() {
           />
         ))}
       </section>
-
-      {/* <section className="testimonials-carousel">
-        <Carousel />
-      </section> */}
     </section>
   );
 }
