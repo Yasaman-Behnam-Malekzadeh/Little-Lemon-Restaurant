@@ -57,7 +57,7 @@ export default function Testimonials() {
       <section className="testimonials-cards">
         {testimonailItems.map((item) => (
           <TestimonialCard
-            key={item.key}
+            key={item.id}
             name={item.name}
             description={item.description}
           />

@@ -25,7 +25,11 @@ export default function ReservationForm(props) {
 
     props.updateTimes(date);
     console.log(props);
-    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+    setFinalTime(
+      props.availableTimes.map((times,index) => (
+        <option key={index}>{times}</option>
+      ))
+    );
   }
 
   const navigate = useNavigate();
